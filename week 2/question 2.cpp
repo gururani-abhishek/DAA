@@ -9,9 +9,9 @@ void solve() {
 	int key; cin >> key;
 
 	int l = 0, r = n-1;
-	int flag1 = 0, mid, flag2 = 0;
+
 	while(l<=r) {
-		 mid = l + (r-l)/2;
+		 int mid = l + (r-l)/2;
 			if(a[mid] >= key) r = mid - 1;
 			else l = mid + 1;
 	}
@@ -21,7 +21,7 @@ void solve() {
 
 	l = 0, r = n-1;
 	while(l<=r) {
-		 mid = l + (r-l)/2;
+		 int mid = l + (r-l)/2;
 			if(a[mid] <= key) l = mid + 1;
 			else r = mid - 1;
 	}
